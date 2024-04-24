@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vansh Shah Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vansh Shah</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img");">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Vansh Shah</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Student   ',
+						
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Front-End Developer | UI / UX Designer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/feed/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							<a href="https://github.com/VanshShah2004/StudentProj" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="/vansh.jpg" class="img-fluid rounded b-shadow-a" alt="" ">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Vansh Shah</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Front-End Engineer + UI/UX Designer</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Year</span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>HTML</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CSS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Javascript</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>React</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>As a seasoned front-end engineer and UI/UX designer, I blend technical mastery with design excellence to create captivating digital experiences.<br><br>
+
+									Technical Mastery, Design Excellence : 
+									
+									With expertise in HTML, CSS, JavaScript, and frameworks like React and Angular, I bring design concepts to life with intuitive, visually stunning interfaces.
+									
+									<br>Collaborative Approach :
+									
+									I thrive in interdisciplinary teams, ensuring every voice is heard to exceed expectations and bring projects to life.
+									
+									<br>Driven by Innovation :
+									
+									I stay ahead of the curve, experimenting with new technologies and design trends to deliver cutting-edge solutions.
+									<br>
+									Making a Difference:
+									
+									Beyond technical skills, I use my expertise for social good, volunteering for nonprofit projects and advocating for inclusive design practices.
+									<br>
+									Get in Touch:
+									
+									Ready to elevate your digital presence? Let's collaborate on your next project. Reach out today to start the conversation.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Front-End Developer &amp; UI/UX Designer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering in Computer Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi , Gujarati , Marathi , Spanish</span></li>
+
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Dancing</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="12">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/vansh-shah-4468b6259/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p><p>As a seasoned front-end engineer and UI/UX designer, I blend technical mastery with design excellence to create captivating digital experiences.<br><br>
+
+				Technical Mastery, Design Excellence : 
+				
+				With expertise in HTML, CSS, JavaScript, and frameworks like React and Angular, I bring design concepts to life with intuitive, visually stunning interfaces.
+				
+				<br>Collaborative Approach :
+				
+				I thrive in interdisciplinary teams, ensuring every voice is heard to exceed expectations and bring projects to life.
+				
+				<br>Driven by Innovation :
+				
+				I stay ahead of the curve, experimenting with new technologies and design trends to deliver cutting-edge solutions.
+				<br>
+				Making a Difference:
+				
+				Beyond technical skills, I use my expertise for social good, volunteering for nonprofit projects and advocating for inclusive design practices.
+				<br>
+				Get in Touch:
+				
+				Ready to elevate your digital presence? Let's collaborate on your next project. Reach out today to start the conversation.</p></p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2022-Present</span>
+					<h2><h2>College Student</h2></h2>
+					<p class="mt-4">
+						Commenced undergraduate studies in Computer Science Engineering, excelling academically and socially, becoming an active member of VIT’s reputed SIAM (Society for Industrial and Applied Mathematics ) and being part of Dance club.
+					</p>
+				</div>
+			</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2022</span>
+						<h2>High School Student</h2>
+						<p>
+							Completed high school education while excelling in academics and extracurricular activities such as Cricket, demonstrating leadership skills and a passion for teamwork. Actively participated in coding competitions and developed
+							a strong foundation in programming.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2026</span>
+    					<h2>Bachelor of Engineering - BTech.</h2>
+    					<span class="position">Vellore Institute of Technology,Vellore</span>
+    					<p class="mt-4">CGPA : 9.56</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2022</span>
+    					<h2>Junior College</h2>
+    					<span class="position">PACE Junior Science College,Dadar (Mumbai)</span>
+    					<p class="mt-4">Percentage : 92 %</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample Front End Web Developement projects using HTML,CSS,Javascript and React JS.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.knowledgehut.com/blog/web-development/front-end-web-development-projects" class="block-20 zoom-effect" style="background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/v1572259996/Challenges/katmpcijwnmclxyfw3wr.jpg');">
+				</a>
+  
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/frontend-mentor/url-shortening-api-landing-page">URL Shortening Landing Page</a></h3>
+				  <p>Learn how to send HTTP requests and integrate with a third-party API. This project could also be a good way to get your feet wet with JS libraries/frameworks like React or Vue. Also, if the user refreshes their browser, try using localStorage to save the list of shortened links.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.knowledgehut.com/blog/web-development/front-end-web-development-projects" class="block-20 zoom-effect" style="background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/v1618057962/Screenshots/ojgcwr4oen0l6ifnxgcf.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rngueco/intro-component-with-signup-form">Intro-Component with Signup Form</a></h3>
+				  <p>The main takeaway here will be how to write reusable JavaScript code to verify the validity of various form fields.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.knowledgehut.com/blog/web-development/front-end-web-development-projects" class="block-20 zoom-effect" style="background-image: url('data:image/jpeg;base64,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');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/catherineisonline/pricing-component-with-toggle-frontendmentor">Pricing Component with Toggle</a></h3>
+				  <p> If you opt for the bonus, you'll need to carefully consider your HTML structure. To be able to use pseudo-classes and sibling selectors for the toggle, you'll need perfect markup.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">  
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://www.knowledgehut.com/blog/web-development/front-end-web-development-projects" class="block-20 zoom-effect" style="background-image: url('data:image/jpeg;base64,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');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/topics/product-landing-page">Product Landing Page</a></h3>
+					<p>Before diving into the code, take some time to plan this out. Columns will be used on a product landing page, and the components of the landing page will be aligned within them. This also covers basic editing tasks such as cropping images and using design templates.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://www.knowledgehut.com/blog/web-development/front-end-web-development-projects" class="block-20 zoom-effect" style="background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20200417134245/chrome_cfLtTgiJ3y.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/developeratul/javascript-music-player">Music player using JavaScript</a></h3>
+					<p>Before diving into the code, take some time to plan this out. You will get your hands on HTMLMediaElement Interface to play audio files and control its playback. In this project you will get to work on Sliders, Flex Layout and different functions of JavaScript.</p>
+				  </div>
+				</div>
+			  </div>
+		   </div>
+		</div>
+	  </section>
+  
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="12">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="18">0</strong>
+                <span>Hackathons</span>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/VanshShah2004/StudentProj/commit/6d6c9bd8773969fc69ad4a6de06ac2ab4a8f359f" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai , India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 7021865973</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">vansh.shah2022@vitstudent.ac.in</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="#" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/VanshShah2004/StudentProj/commit/6d6c9bd8773969fc69ad4a6de06ac2ab4a8f359f"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/vansh-shah-4468b6259/"><span class="icon-linkedin"></span></a></li>  
+
+				      <li class="ftco-animate"><a href="https://www.instagram.com/_vanshshah.04/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Vansh Shah</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
